@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .menuTitle {
+  font-family: cursive;
+  font-size: 60px;
+}
+
+.menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menuList {
+    grid-template-columns: 1fr;
+  }
+}
