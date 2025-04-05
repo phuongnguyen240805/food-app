@@ -6,11 +6,11 @@ import MenuItem from "~/components/MenuItem";
 
 const cx = classNames.bind(styles)
 
-function HomePage() {
+function MenuPage() {
     return (
         <div className={cx('wrapper')}>
-            <h1 className="menuTitle">Our Menu</h1>
-            <div className="menuList">
+            <h1 className={cx('title')}>Our Menu</h1>
+            <div className={cx('list-item')}>
                 {MenuList.map((menuItem, key) => {
                     return (
                         <MenuItem
@@ -26,4 +26,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default MenuPage;

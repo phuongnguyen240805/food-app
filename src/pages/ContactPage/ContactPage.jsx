@@ -5,28 +5,38 @@ import styles from './ContactPage.module.scss'
 
 const cx = classNames.bind(styles)
 
-function HomePage() {
+function ContactPage() {
     return (
         <div className={cx('wrapper')}>
             <div
-                className={cx("leftSide")}
+                className={cx("left-side")}
                 style={{ backgroundImage: `url(${PizzaLeft})` }}
             ></div>
-            <div className={cx("rightSide")}>
-                <h1> Contact Us</h1>
+            <div className={cx("right-side")}>
+                <h1 className={cx("heading")}> Contact Us</h1>
 
-                <form id={cx("contact-form")} method="POST">
-                    <label htmlFor="name">Full Name</label>
-                    <input name="name" placeholder="Enter full name..." type="text" />
-                    <label htmlFor="email">Email</label>
-                    <input name="email" placeholder="Enter email..." type="email" />
-                    <label htmlFor="message">Message</label>
+                <form className={cx('contact-form')} id={cx("contact-form")} method="POST">
+                    <label
+                        className={cx('label')}
+                        htmlFor="name">Full Name</label>
+                    <input className={cx('input')} name="name" placeholder="Enter full name..." type="text" />
+
+                    <label
+                        className={cx('label')}
+                        htmlFor="email">Email</label>
+                    <input className={cx('input')} name="email" placeholder="Enter email..." type="email" />
+                    
+                    <label
+                        className={cx('label')}
+                        htmlFor="message">Message</label>
                     <textarea
+                    className={cx('comment')}
                         rows="6"
                         placeholder="Enter message..."
                         name="message"
                         required
-                    ></textarea>
+                    >
+                    </textarea>
                     <button type="submit"> Send Message</button>
                 </form>
             </div>
@@ -34,4 +44,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default ContactPage;

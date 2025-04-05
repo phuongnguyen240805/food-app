@@ -1,37 +1,38 @@
 .wrapper {
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - var(--hight-navbar));
+    padding-top: var(--hight-navbar);
     display: flex;
     flex-direction: column;
 }
 
-.aboutTop {
+.about-top {
     width: 100%;
     height: 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: var(--font-family);
 }
 
-.aboutBottom {
+.about-bottom {
     display: flex;
     flex-direction: column;
     height: 55%;
     align-items: center;
     margin-top: 50px;
-}
+    text-align: center;
+    font-family: var(--font-style);
 
-.aboutBottom p {
-    width: 1200px;
-}
+    .heading {
+        padding-bottom: 20px;
+        font-weight: 500;
+        font-size: 4rem;
+        color: black;
+    }
 
-.wrapper .aboutBottom h1 {
-    font-weight: 400;
-    font-size: 70px;
-    color: black;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-40px);
+    .description {
+        line-height: 2rem;
+        color: rgba(0, 0, 0, 0.6);
+    }
 }

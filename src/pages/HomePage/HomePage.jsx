@@ -9,8 +9,8 @@ function HomePage() {
     return (
         <div className={cx('wrapper')}>
                 <div className={cx('header')}>
-                    <h1> Pedro's Pizzeria </h1>
-                    <p> PIZZA TO FIT ANY TASTE</p>
+                    <h1 className={cx('heading')}> Pedro's Pizzeria </h1>
+                    <p className={cx('sub-heading')}> PIZZA TO FIT ANY TASTE</p>
                     <Link to="/menu">
                         <button> ORDER NOW </button>
                     </Link>

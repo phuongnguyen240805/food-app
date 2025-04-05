@@ -5,16 +5,17 @@ import MultiplePizzas from "~/assets/images/multiplePizzas.jpeg";
 
 const cx = classNames.bind(styles)
 
-function HomePage() {
+function AboutPage() {
     return (
         <div className={cx('wrapper')}>
             <div
-                className={cx('aboutTop')}
+                className={cx('about-top')}
                 style={{ backgroundImage: `url(${MultiplePizzas})` }}
-            ></div>
-            <div className={cx('aboutBottom')}>
-                <h1> ABOUT US</h1>
-                <p>
+            >
+            </div>
+            <div className={cx('about-bottom')}>
+                <h1 className={cx('heading')}> ABOUT US</h1>
+                <p className={cx('description')}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                     mollitia, molestiae quas vel sint commodi repudiandae consequuntur
                     voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -34,4 +35,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default AboutPage;
