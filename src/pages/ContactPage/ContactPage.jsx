@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 
 import PizzaLeft from "~/assets/images/pizzaLeft.jpg";
 import styles from './ContactPage.module.scss'
+import Button from "~/components/Button";
 
 const cx = classNames.bind(styles)
 
@@ -37,7 +38,7 @@ function ContactPage() {
                         required
                     >
                     </textarea>
-                    <button type="submit"> Send Message</button>
+                    <Button type="submit" medium>Send Message</Button>
                 </form>
             </div>
         </div>

@@ -1,0 +1,41 @@
+.wrapper {
+    margin-top: 20px;
+    min-height: 40px;
+    min-width: 120px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #121619;
+    color: white;
+    font-size: 2rem;
+    transition: .2s;
+
+    &:hover {
+        background-color: #393a3b;
+    }
+}
+
+.medium {
+    min-width: 160px;
+    width: 170px;
+    font-size: 1.5rem;
+    background-color: #121619;
+    transition: .2s;
+
+    &:hover {
+        background-color: #393a3b;
+    }
+}
+
+.title {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-family: var(--font-family);
+}

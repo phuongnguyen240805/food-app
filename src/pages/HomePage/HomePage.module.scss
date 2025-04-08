@@ -9,8 +9,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-image: url(https://github.com/machadop1407/react-website-tutorial/blob/main/src/assets/pizza.jpeg?raw=true);
+    font-family: var(--font-family);
+    // background-image: url(https://github.com/machadop1407/react-website-tutorial/blob/main/src/assets/pizza.jpeg?raw=true);
 }
 
 .header {
@@ -21,37 +21,19 @@
         align-items: center;
         justify-content: center;
         font-size: 90px;
-        height: 60px;
         font-weight: 50;
         color: black;
     }
 
     .sub-heading {
-        padding-top: 20px;
         font-size: 40px;
         font-weight: lighter;
         color: black;
     }
 }
 
-.header button {
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    justify-content: center;
-    background-color: #121619;
-    height: 50px;
-    width: 180px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.header button:hover {
-    background-color: #07090a;
-    cursor: pointer;
-    transition: 0.3s ease-in;
+.button {
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -82,16 +64,5 @@
     .header .sub-heading {
         font-size: 30px;
         color: white;
-    }
-
-    .header button {
-        background-color: white;
-        color: #121619;
-        margin-bottom: 30px;
-    }
-
-    .header button:hover {
-        background-color: rgb(225, 225, 225);
-        color: #121619;
     }
 }
