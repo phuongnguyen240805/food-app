@@ -60,12 +60,12 @@ function Button({
 }
 
 Button.propTypes = {
+    children: PropTypes.node.isRequired,
     to: PropTypes.string,
     href: PropTypes.string,
     disabled: PropTypes.bool,
     primary: PropTypes.bool,
     medium: PropTypes.bool,
-    children: PropTypes.node.isRequired,
     className: PropTypes.string,
     onClick: PropTypes.func,
 }

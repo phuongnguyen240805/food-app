@@ -1,10 +1,11 @@
+import configs from "~/configs";
 import { AboutPage, ContactPage, HomePage, MenuPage } from "~/pages";
 
 const publicRouter = [
-    { path: '/', component: HomePage },
-    { path: '/menu', component: MenuPage },
-    { path: '/about', component: AboutPage },
-    { path: '/contact', component: ContactPage },
+    { path: configs.router.home, component: HomePage },
+    { path: configs.router.menu, component: MenuPage },
+    { path: configs.router.contact, component: AboutPage },
+    { path: configs.router.about, component: ContactPage },
 ]
 
 const privateRouter = [

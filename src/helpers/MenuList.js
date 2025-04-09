@@ -1,39 +1,34 @@
-import Pepperoni from "~/assets/images/pepperoni.jpg";
-import Margherita from "~/assets/images/margherita.jpg";
-import PedroTechSpecial from "~/assets/images/pedrotechspecial.jpg";
-import Vegan from "~/assets/images/vegan.jpg";
-import Pineapple from "~/assets/images/pineapple.jpg";
-import Expensive from "~/assets/images/expensive.jpg";
+import images from "~/assets/images";
 
 export const MenuList = [
   {
     name: "Pepperoni Pizza",
-    image: Pepperoni,
+    image: images.pepperoni,
     price: 15.99,
   },
   {
     name: "Margherita Pizza",
-    image: Margherita,
+    image: images.margherita,
     price: 11.99,
   },
   {
     name: "PedroTech Special Pizza",
-    image: PedroTechSpecial,
+    image: images.pedrotechspecial,
     price: 256.53,
   },
   {
     name: "Vegan Pizza",
-    image: Vegan,
+    image: images.vegan,
     price: 17.99,
   },
   {
     name: "Pineapple Pizza",
-    image: Pineapple,
+    image: images.pineapple,
     price: 4.99,
   },
   {
     name: "Very Expensive Pizza",
-    image: Expensive,
+    image: images.expensive,
     price: 1997.99,
   },
 ];

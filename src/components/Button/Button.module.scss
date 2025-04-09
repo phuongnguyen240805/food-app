@@ -1,19 +1,28 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wrapper {
-    margin-top: 20px;
-    min-height: 40px;
+    width: 120px;
     min-width: 120px;
+    min-height: 40px;
+    margin-top: 20px;
     padding: 10px 20px;
+
     border: none;
     border-radius: 5px;
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
     cursor: pointer;
+
+    @extend .center;
 }
 
 .primary {
     background-color: #121619;
-    color: white;
-    font-size: 2rem;
     transition: .2s;
 
     &:hover {
@@ -22,9 +31,6 @@
 }
 
 .medium {
-    min-width: 160px;
-    width: 170px;
-    font-size: 1.5rem;
     background-color: #121619;
     transition: .2s;
 

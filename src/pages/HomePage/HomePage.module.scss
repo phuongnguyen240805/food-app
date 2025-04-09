@@ -13,6 +13,16 @@
     // background-image: url(https://github.com/machadop1407/react-website-tutorial/blob/main/src/assets/pizza.jpeg?raw=true);
 }
 
+.wrapper {
+
+    .btn {
+        width: 160px;
+        height: 50px;
+        margin-left: 50px;
+        font-size: 2rem;
+    }
+}
+
 .header {
     width: auto;
     margin-left: 50px;
@@ -30,10 +40,6 @@
         font-weight: lighter;
         color: black;
     }
-}
-
-.button {
-    padding-top: 20px;
 }
 
 @media only screen and (max-width: 650px) {
